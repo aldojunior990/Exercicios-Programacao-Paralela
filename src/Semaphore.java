@@ -2,9 +2,7 @@ import static java.lang.Thread.sleep;
 
 @SuppressWarnings("ALL")
 public class Semaphore implements Runnable {
-
     private final String _name;
-
     private Integer _timeDelay;
     private Colors _startsWith;
 
@@ -47,7 +45,6 @@ public class Semaphore implements Runnable {
     @Override
     public void run() {
         System.out.println(_name + " Iniciando.." + " Sinal: " + _startsWith);
-        toSleep(50);
         while (true) {
             switch (_startsWith) {
                 case GREEN -> {
