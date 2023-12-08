@@ -1,3 +1,5 @@
+package semaphore;
+
 import static java.lang.Thread.sleep;
 
 @SuppressWarnings("ALL")
@@ -10,10 +12,6 @@ public class Semaphore implements Runnable {
         _name = name;
         _timeDelay = 5000;
         _startsWith = startsWith;
-    }
-
-    public void setTimeDelay(Integer timeDelay) {
-        _timeDelay = timeDelay;
     }
 
     private void toSleep(Integer time) {

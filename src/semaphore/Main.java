@@ -1,3 +1,5 @@
+package semaphore;
+
 public class Main {
     public static void main(String[] args) {
         ThreadSemaphoreFactory threadFactory = new ThreadSemaphoreFactory();
